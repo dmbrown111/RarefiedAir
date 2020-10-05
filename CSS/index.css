@@ -1,7 +1,3 @@
-/* header {
-  overflow: hidden;
-} */
-
 body {
   background-color: #4282d6;
   padding: 0px;
@@ -41,7 +37,6 @@ body {
 
 #bannerTitle {
   margin-top: 12%;
-  /* margin-left: 33%; */
   display: flex;
   width: 100%;
   justify-content: center;
@@ -91,41 +86,27 @@ body {
 #pageDownButtonContainer {
   display: flex;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 12%;
   position: relative;
   cursor: pointer;
 }
 
-.arrow {
-  background-color: rgb(255, 255, 255);
-  height: 35px;
-  width: 3px;
-  position: absolute;
-  margin-top: 35px;
-  margin-right: 22px;
-  transform: rotate(-40deg);
+#pageDown {
+  width: 4%;
 }
-
-.right {
-  transform: rotate(40deg);
-  margin-left: 42px;
-}
-
 #mainGraphicContainer {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
+  margin-top: 20%;
 }
 
 #mainGraphic {
-  /* width: 100%; */
-  /* height: 700px; */
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* position: relative; */
 }
 
 #mainGraphicImage {
@@ -135,12 +116,11 @@ body {
   overflow: hidden;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
   position: relative;
-  z-index: -1;
 }
 
 #titleContainer {
@@ -199,7 +179,6 @@ p3 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  /* border: 2px solid red; */
   position: absolute;
   z-index: 1;
 }
@@ -224,6 +203,12 @@ p3 {
 .skydiver_image {
   width: 60%;
   margin-left: 20%;
+}
+
+.shrink {
+  width: 45%;
+  margin-left: 30%;
+  margin-bottom: 10%;
 }
 
 .start_button {
@@ -283,8 +268,6 @@ p2 {
 #join {
   display: flex;
   flex-direction: row;
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   font-size: 4vw;
 }
@@ -306,24 +289,28 @@ p2 {
 }
 
 .footerImage {
-  width: 33%;
-  height: 300px;
+  width: 33.3%;
+  height: 100%;
 }
+
+/* Footer Section */
 
 #footerContainer {
   width: 100%;
-  height: 100px;
-  background-color: blanchedalmond;
+  background-color: rgb(248, 248, 248);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-size: 6vw;
 }
+#footerLeft {
+  width: 20%;
+  min-width: 20%;
+}
 
 #footerLogo {
   display: flex;
   flex-direction: row;
-  text-align: center;
   cursor: pointer;
 }
 
@@ -334,12 +321,99 @@ p2 {
   margin-top: 2%;
 }
 
+#footerRight {
+  width: 100%;
+  margin-left: 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+
 #socialLogos {
-  margin-right: 3%;
-  margin-top: 1%;
   cursor: pointer;
+  width: 20%;
+}
+
+#socialImage {
+  width: 33%;
+  height: 60%;
+  margin-left: 2%;
+  margin-top: 2%;
 }
 
 p5 {
   color: #4282d6;
+}
+
+/* MOBILE DESIGN */
+
+@media only screen and (max-width: 800px) {
+  #mainGraphicContainer {
+    background-color: rgb(255, 255, 255);
+    margin-top: 50%;
+  }
+
+  #mainGraphic {
+    margin-left: -30%;
+    margin-bottom: 90%;
+    background-color: rgb(255, 255, 255);
+  }
+
+  #lowerTitle {
+    display: none;
+  }
+
+  #buttonGroup {
+    margin-left: 60%;
+    margin-top: -55%;
+    flex-direction: column;
+  }
+
+  .button_container {
+    margin-top: 2%;
+    width: 50%;
+    height: 180%;
+    border: 2px solid rgb(194, 185, 185);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .button_group_text {
+    font-size: 2.5vw;
+  }
+
+  .skydiver_image {
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .shrink {
+    margin-bottom: 0%;
+    margin-bottom: 2%;
+  }
+
+  .black {
+    margin-top: 30%;
+    margin-left: 10%;
+    height: 17%;
+    width: 25%;
+  }
+
+  #find {
+    margin-top: 2%;
+    margin-left: 15%;
+    font-size: 3vw;
+  }
+
+  p2 {
+    margin-top: 1%;
+    font-size: 4vw;
+  }
+
+  .skydiving_school {
+    margin-top: 3%;
+  }
+
+  #footerTop {
+    display: none;
+  }
 }
