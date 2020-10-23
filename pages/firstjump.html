@@ -1,0 +1,97 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../CSS/firstjump.css" rel="stylesheet" />
+
+    <title>First Jump</title>
+  </head>
+  <body>
+    <banner id="bannerTitle" class="site_font bold">
+      <div class="banner_title">READY TO EXPERIENCE<br />THE THRILL?</div>
+      <div id="bannerImageContainer">
+        <img src="../assets/firstjump/bannerClouds.png" id="bannerClouds" />
+        <img src="../assets/firstjump/bannerSkydiver.png" id="bannerSkydiver" />
+      </div>
+    </banner>
+    <div id="infoSection">
+      <div class="section">
+        <h2>Single Jumper: $225.00</h2>
+        <p>
+          Tandem Skydive, includes all training, equipment, the jump from
+          14,500' , <br />and an official, signed, Jump Certificate.
+        </p>
+        <p2 class="site_font bold">+ Video/Photo Package: $100.00</p2>
+        <img id="parachute" src="../assets/firstjump/parachute.png" />
+        <h2>Group Jump (5 or more): $225.00 each</h2>
+        <p>
+          Tandem Skydive, includes all training, equipment, the jump from
+          14,500' , <br />
+          and an official, signed, Jump Certificate.
+        </p>
+        <p2 class="site_font bold">+ Video/Photo Package: $50.00 each</p2>
+        <h1>Physical requirements:</h1>
+        <p>
+          <span class="site_font bold">Age:</span> You must be at least 18 to
+          skydive at Rarefied Air Skydiving School.
+        </p>
+        <p>
+          <span class="site_font bold">Weight:</span> Maximum weight is 225 lbs
+        </p>
+        <h1>Length of Jump:</h1>
+        <p>
+          Most dives last approximately 2 hours, which includes paperwork,
+          training, equipment preparation, aircraft ride,<br />
+          the jump itself, and removal of equipment. We cannot guarantee flight
+          conditions or specify exact times for the <br />day of your jump. Be
+          prepared to wait up to 4 hours if needed.
+        </p>
+      </div>
+    </div>
+    <div id="formSection">
+      <h1 id="formHeader">
+        Set up an appointment <br />
+        with one of our specialists to get started:
+      </h1>
+      <div id="form">
+        <label for="name">Name:*</label><br />
+        <input type="text" id="name" /><br />
+        <label for="name">Phone number:</label><br />
+        <input type="text" id="phoneNumber" /><br />
+        <label for="name">Email:*</label><br />
+        <input type="text" id="email" /><br />
+        <label for="name">Additional Info:*</label><br />
+        <input type="text" id="additionalInfo" /><br />
+        <input type="submit" value="Submit" id="submit" />
+      </div>
+    </div>
+    <div id="lowerLogo">
+      <img id="uspa" src="../assets/firstjump/uspa.png" />
+    </div>
+    <div id="footerContainer">
+      <div id="footerLeft" onclick="document.location='../index.html'">
+        <div id="footerLogo">
+          <p3 class="site_font">R</p3><p5 class="site_font">A</p5>
+          <img id="footerHelmet" src="../assets/helmet.png" />
+        </div>
+      </div>
+      <div id="footerRight">
+        <div id="socialLogos">
+          <a href="https://www.facebook.com/JoinTheTeem/">
+            <img id="socialImage" src="../assets/fb.png"
+          /></a>
+          <a href="https://www.instagram.com/jointheteem/?hl=en">
+            <img id="socialImage" src="../assets/instagram.png"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.getElementById("additionalInfo").style.height = "200px";
+  </script>
+</html>
