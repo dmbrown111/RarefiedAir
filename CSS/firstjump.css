@@ -39,6 +39,8 @@ body {
   text-align: center;
   color: white;
   background-color: #4282d6;
+  position: relative;
+  z-index: 1;
 }
 
 .banner_title {
@@ -83,6 +85,12 @@ body {
   width: 100%;
   height: 800px;
   margin-left: 5%;
+  position: relative;
+  z-index: 2;
+}
+
+p {
+  padding-top: 2%;
 }
 
 #parachute {
@@ -91,28 +99,10 @@ body {
   margin-right: 0;
   margin-right: 3%;
 }
+
 #section {
   margin-top: 50%;
   margin-left: 5%;
-}
-
-#formHeader {
-  text-align: center;
-}
-
-#form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 60%;
-  margin-left: 20%;
-  margin-top: 10%;
-  font-size: 2vw;
-}
-
-#submit {
-  width: 30%;
-  height: 40px;
 }
 
 #lowerLogo {
@@ -125,9 +115,10 @@ body {
 #uspa {
   width: 10%;
   margin-bottom: 5%;
+  min-width: 80px;
 }
 
-/* Footer Section */
+/* Footer Section
 
 #footerContainer {
   width: 100%;
@@ -176,4 +167,4 @@ body {
 
 .social_color {
   color: #4282d6;
-}
+} */
