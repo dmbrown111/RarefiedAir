@@ -3,7 +3,8 @@
 #footerContainer {
   display: flex;
   flex-direction: row;
-  padding: 1%
+  padding: 1%;
+  background-color: white;
 }
 
 #footerLeft {

@@ -1,6 +1,7 @@
 body, html {
   padding: 0px;
   margin: 0px;
+  background-color: #4282d6 ;
 }
 
 /* Colors */
@@ -149,6 +150,7 @@ body, html {
   display: flex;
   flex-direction: column;
   position: relative;
+  background-color: white;
 }
 
 #mainGraphic {
@@ -185,8 +187,6 @@ body, html {
   flex-direction: row;
   justify-content: center;
 }
-
-
 
 /* Button Section */
 
@@ -238,8 +238,6 @@ body, html {
   cursor: pointer;
   transition: box-shadow 0.8s ease;
 }
-
-
 
 .button_effect:hover {
   background-color: #85a7e7;
@@ -331,8 +329,6 @@ body, html {
   width: 33.3%;
   height: 100%;
 }
-
-
 
 /* MOBILE DESIGN */
 
