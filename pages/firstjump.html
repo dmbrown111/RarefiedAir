@@ -7,7 +7,8 @@
       rel="stylesheet"
     />
     <link href="../CSS/firstjump.css" rel="stylesheet" />
-
+    <link href="../CSS/footer.css" rel="stylesheet" />
+    <link href="../CSS/form.css" rel="stylesheet" />
     <title>First Jump</title>
   </head>
   <body>
@@ -25,7 +26,7 @@
           Tandem Skydive, includes all training, equipment, the jump from
           14,500' , <br />and an official, signed, Jump Certificate.
         </p>
-        <p2 class="site_font bold">+ Video/Photo Package: $100.00</p2>
+        <p class="site_font bold">+ Video/Photo Package: $100.00</p>
         <img id="parachute" src="../assets/firstjump/parachute.png" />
         <h2>Group Jump (5 or more): $225.00 each</h2>
         <p>
@@ -33,15 +34,18 @@
           14,500' , <br />
           and an official, signed, Jump Certificate.
         </p>
-        <p2 class="site_font bold">+ Video/Photo Package: $50.00 each</p2>
-        <h1>Physical requirements:</h1>
-        <p>
-          <span class="site_font bold">Age:</span> You must be at least 18 to
-          skydive at Rarefied Air Skydiving School.
-        </p>
-        <p>
-          <span class="site_font bold">Weight:</span> Maximum weight is 225 lbs
-        </p>
+        <p class="site_font bold">+ Video/Photo Package: $50.00 each</p>
+        <div>
+          <h1>Physical requirements:</h1>
+          <p>
+            <span class="site_font bold">Age:</span> You must be at least 18 to
+            skydive at Rarefied Air Skydiving School.
+          </p>
+          <p>
+            <span class="site_font bold">Weight:</span> Maximum weight is 225
+            lbs
+          </p>
+        </div>
         <h1>Length of Jump:</h1>
         <p>
           Most dives last approximately 2 hours, which includes paperwork,
@@ -57,16 +61,28 @@
         Set up an appointment <br />
         with one of our specialists to get started:
       </h1>
-      <div id="form">
-        <label for="name">Name:*</label><br />
-        <input type="text" id="name" /><br />
-        <label for="name">Phone number:</label><br />
-        <input type="text" id="phoneNumber" /><br />
-        <label for="name">Email:*</label><br />
-        <input type="text" id="email" /><br />
-        <label for="name">Additional Info:*</label><br />
-        <input type="text" id="additionalInfo" /><br />
-        <input type="submit" value="Submit" id="submit" />
+      <div id="formContainer">
+        <div id="form">
+          <div>
+            <label for="name">Name:*</label>
+            <input type="text" id="name" />
+          </div>
+          <div>
+            <label for="name">Phone number:</label>
+            <input type="text" id="phoneNumber" />
+          </div>
+          <div>
+            <label for="name">Email:*</label>
+            <input type="text" id="email" />
+          </div>
+          <div>
+            <label for="name">Additional Info:*</label>
+            <textarea id="additionalInfo" row="5"></textarea>
+          </div>
+          <div id="submitContainer">
+            <input type="submit" value="Submit" id="submit" />
+          </div>
+        </div>
       </div>
     </div>
     <div id="lowerLogo">
@@ -75,7 +91,8 @@
     <div id="footerContainer">
       <div id="footerLeft" onclick="document.location='../index.html'">
         <div id="footerLogo">
-          <p3 class="site_font">R</p3><p5 class="site_font">A</p5>
+          <p3 class="site_font">R</p3>
+          <div class="site_font blue">A</div>
           <img id="footerHelmet" src="../assets/helmet.png" />
         </div>
       </div>
@@ -91,7 +108,4 @@
       </div>
     </div>
   </body>
-  <script>
-    document.getElementById("additionalInfo").style.height = "200px";
-  </script>
 </html>
