@@ -1,14 +1,21 @@
-body {
-  background-color: #4282d6;
+body, html {
   padding: 0px;
   margin: 0px;
-  width: 100%;
+  background-color: #4282d6 ;
 }
+
+/* Colors */
+
+/* primary_blue: #4282d6 */
+/* button_shadow_1: rgba(85, 85, 85, 0.24) */
+/* button_shadow_2: rgba(0, 0, 0, 0.19) */
+/* gray: rgb(194, 185, 185) */
 
 /* Font section */
 
 .site_font {
   font-family: "Roboto Condensed", sans-serif;
+   margin: 0;
 }
 
 .site_font.bold {
@@ -33,10 +40,50 @@ body {
   font-size: 24px;
 }
 
+.font_color_change {
+  color: white;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.button_group_text {
+  font-weight: bold;
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+.button_font {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+.title_text {
+  font-size: 6em;
+}
+
+.lower_title {
+  font-size: 1.5vw;
+  line-height: 2.3vw;
+  text-align: center;
+}
+
+.find {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
 /* Site Banner */
 
+#bannerContainer {
+  background-color: #4282d6;
+  padding-top: 12%;
+  padding-bottom: 25%;
+}
+
 #bannerTitle {
-  margin-top: 12%;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -50,10 +97,6 @@ body {
   justify-content: center;
 }
 
-.font_color_change {
-  color: blanchedalmond;
-}
-
 #airHelmet {
   display: flex;
   flex-direction: row;
@@ -61,178 +104,139 @@ body {
 }
 
 .helmet {
-  width: 10%;
-  max-width: 10%;
-  max-height: 10%;
-  min-width: 131px;
-  min-height: 147px;
-  margin-left: 5px;
+  width: 15%;
+  height: 17%;
+  max-width: 100px;
+  max-height: 120px;
+  margin-left: 3%;
 }
 
 #skydivingSchool {
   display: flex;
   justify-content: center;
-  font-size: 3vw;
+  align-items: center;
+  align-content: center;
+  margin-top: 3%;
 }
 
 .skydiving_school {
-  margin-top: 1.7%;
+  margin: 0 1%;
+  font-size: 3vw;
+  color: #FFF;
+  font-weight: 100;
 }
 
-.diamond {
-  color: blanchedalmond;
-  padding: 8px;
+.diamond_white {
+  color: #FFF;
+  font-size: 2vw;
 }
 
 #pageDownButtonContainer {
   display: flex;
   justify-content: center;
-  margin-top: 12%;
+  margin-top: 17%;
   position: relative;
   cursor: pointer;
 }
 
 #pageDown {
-  width: 4%;
+  width: 6%;
 }
+
+/* Main Page Content */
 
 #mainGraphicContainer {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   position: relative;
-  margin-top: 20%;
+  background-color: white;
 }
 
 #mainGraphic {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 #mainGraphicImage {
   width: 100%;
-  background-size: cover;
-  /* height: 100%; */
-  overflow: hidden;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   position: relative;
 }
 
 #titleContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-top: 15%;
-  /*margin-left: 70%;*/
   align-items: center;
-  position: absolute;
-  width: 100%;
-  align-content: center;
-}
-
-.title_text {
-  font-size: 6em;
+  margin-bottom: 3%;
   position: relative;
   z-index: 2;
-  margin-left: 0px;
-  margin-top: 0px;
+}
+
+/* Content Title */
+
+#mainGraphicTitleContainer {
+  margin-top: -15%;
+  padding-bottom: 5%;
 }
 
 #lowerTitleContainer {
   display: flex;
   flex-direction: row;
-  position: absolute;
-  margin-left: 35%;
-  margin-top: 35%;
-  text-align: center;
+  justify-content: center;
 }
 
-#lowerTitle {
-  z-index: 2;
-  margin-top: 0px;
-  width: 100%;
-  font-size: 1.5vw;
-}
-
-.bold {
-  font-weight: bold;
-}
+/* Button Section */
 
 #buttonGroupContainer {
   display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 200px;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  position: relative;
 }
 
 #buttonGroup {
-  width: 100%;
-  height: 50%;
+  width: 90%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  position: absolute;
-  z-index: 1;
-  margin-top: 65%;
+  justify-content: space-around;
 }
+
+/* Button Box */
 
 .button_container {
-  width: 22%;
-  height: 90%;
   border: 2px solid rgb(194, 185, 185);
   display: flex;
+  align-content: end;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2%;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 2% 2%;
-}
-
-.button_group_text {
-  font-weight: bold;
-  font-size: 1.5vw;
-  width: 75%;
-  text-align: center;
-  margin: 0 auto;
 }
 
 .skydiver_image {
-  width: 60%;
-  margin: 0 auto;
-}
-
-.adjust {
-  padding-bottom: 8%;
-}
-
-.shrink {
-  width: 40%;
-  margin-left: 30%;
+  width: 70%;
+  height: 100%;
+  max-height: 90px;
+  max-width: 120px;
+  padding: 10%;
 }
 
 .button {
   width: 75%;
   height: 17%;
+  min-height: 40px;
   background-color: #4282d6;
   border-radius: 5px;
-  margin: 1% auto 0 auto;
   display: flex;
   text-align: center;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   cursor: pointer;
   transition: box-shadow 0.8s ease;
-}
-
-.button_font {
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  font-size: 2vw;
 }
 
 .button_effect:hover {
@@ -242,56 +246,45 @@ body {
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-#lowerGraphicContainer {
+#dropzoneButton {
+  margin-top: 7%;
+  width: 35%;
+  max-width: 250px;
+  min-height: 40px;
+  background-color: black;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  padding: 0.5%;
+  transition: none;
+}
+
+#dropPin {
+  width: 10%;
+  min-width: 20px;
+  margin-top: 1%;
+  margin-left: 4%;
+}
+
+/* Bottom Cloud */
+
+#lowerGraphicContainer {
   position: relative;
+  z-index: 1;
 }
 
 #lowerGraphic {
   width: 100%;
   background-size: cover;
-  overflow: hidden;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  position: relative;
+  margin-top: -30%;
 }
+
+/* Call To Action - Join the Team */
 
 #joinContainer {
   width: 100%;
-  /* margin-left: 40%; */
-}
-
-.black {
-  position: relative;
-  margin-top: 2%;
-  /* margin-left: 0.5%; */
-  height: 8%;
-  width: 22%;
-  min-height: 40px;
-  min-width: 100px;
-  background-color: black;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0%;
-  transition: none;
-}
-
-#find {
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  font-size: 2vw;
-}
-#dropPin {
-  height: 60%;
-  margin-top: 1%;
-  position: stickys;
+  background-color: #4282d6;
 }
 
 #joinTheTeem {
@@ -301,31 +294,35 @@ body {
   justify-content: center;
 }
 
-.skydiving_school_two {
-  margin-top: 1%;
-}
-
 #join {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-size: 4vw;
+  align-items: center
 }
 
-.diamond {
-  height: 80%;
-  margin-top: 1%;
+#joinTitle {
+  margin: 0 2%;
+  font-size: 4.5vw;
 }
+
+.diamond_black {
+  font-size: 3vw;
+}
+
 
 #joinVideo {
-  margin-top: 3%;
+  max-width: 90%;
+  margin: 6% auto;
 }
+
+/* Footer */
 
 #footerTop {
   width: 100%;
   display: flex;
   flex-direction: row;
-  margin-top: 10%;
+  background-color: #4282d6;
 }
 
 .footerImage {
@@ -340,94 +337,8 @@ body {
     font-size: 14vw;
   }
 
-  #mainGraphicContainer {
-    background-color: rgb(255, 255, 255);
-    margin-top: 50%;
-  }
-
-  #mainGraphic {
-    margin-left: -30%;
-    margin-bottom: 100%;
-    background-color: rgb(255, 255, 255);
-  }
-
-  #lowerGraphic {
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    margin-top: 0%;
-  }
-
-  #titleContainer {
-    width: 50%;
-    margin-top: -25%;
-    margin-left: 55%;
-  }
-
-  #lowerTitle {
-    display: none;
-  }
-
-  #buttonGroup {
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    padding-left: 25%;
-    padding-top: 105%;
-  }
-
   .button_container {
-    width: 50%;
-    height: 50%;
-    padding-bottom: 4px;
-    margin-top: 4px;
-  }
-
-  .button_group_text {
-    font-size: 2.5vw;
-  }
-
-  .skydiver_image {
-    width: 58%;
-    padding-top: 1%;
-    padding-bottom: 2%;
-  }
-
-  .shrink {
-    margin-top: 0%;
-    margin-bottom: 0%;
-    width: 40%;
-  }
-
-  .site_font {
-    margin-top: 0;
-  }
-
-  .start_button {
-    min-height: 40px;
-  }
-
-  #blankCloud {
-    height: 50%;
-    margin-top: 0%;
-    border: 2px solid yellow;
-    background-color: rgb(255, 255, 255);
-  }
-
-  #lowerGraphicContainer {
-    margin-top: -30%;
-  }
-
-  #lowerGraphicContainer {
-    height: 100%;
-  }
-
-  .skydiving_school_two {
-    margin-top: 3%;
-  }
-
-  #footerTop {
-    display: none;
+    width: 25%;
   }
 }
 
@@ -436,62 +347,30 @@ body {
     font-size: 4em;
   }
 
-  #mainGraphic {
-    margin-left: -60%;
-  }
-  .helmet {
-    min-width: 100px;
-    min-height: 100px;
-    margin-top: 3%;
+  .button_group_text {
+    font-size: 2.4vw;
   }
 
-  #titleContainer {
-    width: 50%;
-    margin-top: -25%;
-    margin-left: 80%;
+  .lower_title {
+    font-size: 2.3vw;
+    line-height: 3.7vw;
   }
 
   #buttonGroup {
-    padding-left: 55%;
+    flex-direction: column;
+    align-items: center;
   }
 
-  #lowerGraphicContainer {
-    height: 100%;
+  .button_container {
+    width: 50%;
+    margin: 3% 0;
   }
 
-  /* #blankCloud {
-    height: 200px;
-  } */
-
-  .site_font {
-    margin-top: 0;
-  }
-  #find {
-    margin-top: 7%;
-    margin-left: 15%;
+  .button_font {
+    font-size: 3vw;
   }
 
-  .skydiving_school_two {
-    margin-top: 5%;
-  }
-
-  #footerContainer {
-    width: 100%;
-    font-size: 9vw;
-  }
-
-  #footerhelmet {
-    width: 20%;
-    height: 70%;
-    margin-top: 2%;
-  }
-
-  #footerLeft {
-    width: 60%;
-    min-width: 20%;
-  }
-
-  #socialLogos {
-    width: 46%;
+  #footerTop {
+    display: none;
   }
 }

@@ -9,116 +9,137 @@
     <link href="./CSS/index.css" rel="stylesheet" />
     <link href="./CSS/footer.css" rel="stylesheet" />
     <script src="index.js"></script>
-    <title>Document</title>
+    <title>Rarefied Air Skydiving School</title>
   </head>
   <body>
-    <div id="bannerTitle" class="site_font bold">
-      <div id="rarefied">
-        <div>RARE</div>
-        <div class="font_color_change">FIED</div>
+    <div id="bannerContainer">
+      <div id="bannerTitle" class="site_font bold">
+        <div id="rarefied">
+          <div>RARE</div>
+          <div class="font_color_change">FIED</div>
+        </div>
+
+        <div id="airHelmet">
+          <div class="font_color_change">AIR</div>
+          <img src="assets/helmet.png" class="helmet"></img>
+        </div>
+
+        <div id="skydivingSchool" class="site_alt_font_one">
+            <span class="diamond_white">&#9670;</span>
+            <div class="skydiving_school">Skydiving School</div> 
+            <span class="diamond_white">&#9670;</span>
+        </div>
       </div>
-      <div id="airHelmet">
-        <div class="font_color_change">AIR</div>
-        <img src="assets/helmet.png" class="helmet"></img>
-      </div>
-      <div id="skydivingSchool" class="site_alt_font_one">
-          <span class="diamond">&#9826</span>
-          <div class="skydiving_school">Skydiving School</div> 
-          <span class="diamond">&#9826</span>
+
+      <div id="pageDownButtonContainer" onclick="scrollPage()">
+          <img id="pageDown" src="./assets/ButtonContainer.png">
       </div>
     </div>
-    <div id="pageDownButtonContainer" onclick="scrollPage()">
-        <img id="pageDown" src="./assets/ButtonContainer.png"></img>
-    </div>
+
     <div id="mainGraphicContainer">
       <div id="mainGraphic">
-        
         <img src="./assets/mainGraphic.png" id="mainGraphicImage">
-        <div id="titleContainer">
-        <div class="title_text site_font regular">Get Your</div>
-        <p class="title_text site_font regular wings">Wings</p>
-        </div>
-        <div id=lowerTitleContainer>
-          <div id="lowerTitle">Whether this is your first jump or your five hundreth,
-          <br><span class="bold">Rarefied Air</span> has got you covered.</div>
-      </div>
-      <!-- <div id="buttonGroupContainer"> -->
-      <div id="buttonGroup">
-        <div class="button_container">
-          <p class="button_group_text site_font">Get started booking your first jump.</p>
-        <img class="skydiver_image" src="./assets/skydiver1.png">
-        <div class="button button_effect" onclick="window.location='../pages/firstjump.html'"><div class="site_font button_font">Get Started</div></div>
-        </div>
-        <div class="button_container">
-          <p class="button_group_text site_font">Ready to go solo?  We can help.</p>
-          <img class="skydiver_image adjust" src="./assets/skydiver2.png">
-          <div class="button button_effect" onclick="window.location='../pages/getcertified.html'"><div class="site_font button_font">Get Certified</div></div>
-        </div>
-        <div class="button_container">
-          <p class="button_group_text site_font">Learn more about 
-            skydiving as a discipline. 
-            </p>
-            <img class="skydiver_image shrink" src="./assets/skydiver3.png">
-            <div class="button button_effect expand"><div class="site_font button_font">The Manual</div></div>
-          </div>
-      
-    <!-- </div> -->
-  </div>
-      </div>
-    </div>
-    <div id="lowerGraphicContainer">
-    <img src="./assets/lowerGraphic.png" id="lowerGraphic">
-    
-  </div>
-  <div id="joinContainer">
-  <div class="button black">
-    <div id="find" class="site_font">Find a Dropzone</div>
-   <img id="dropPin" src="./assets/mapdrop.png">
-   </div>
-  </div>
-  <div id="joinTheTeem">
-    <div id="join">
-      <img class="diamond" src="./assets/blackDiamond.png">
-      <div class="skydiving_school_two site_font">Join the TEAM</div> 
-      <img class="diamond" src="./assets/blackDiamond.png">
-  </div>
-  </div>
-  <div id="joinVideo">
-    <iframe
-      id="video"
-      src="https://player.vimeo.com/video/431287561"
-      width="100%"
-      height="360"
-      frameborder="0"
-      allow="autoplay; fullscreen"
-      allowfullscreen
-    ></iframe>
-  </div>
-  <div id="footerTop">
-    <img src="./assets/bottom-left.png" class="footerImage">
-    <img src="./assets/bottom-middle.png" class="footerImage">
-    <img src="./assets/bottom-right.png" class="footerImage">
-  </div>
-  <div id="footerContainer">
-  
-  <div id="footerLeft" onclick="document.location='index.html'">
-    
-      <div id="footerLogo"><div class="site_font">R</div><div class="site_font blue">A</div>
-      <img id="footerHelmet" src="./assets/helmet.png">
-      </div>
-    
-    </div>
-    <div id="footerRight">
-      <div id="socialLogos">
-        <a href="https://www.facebook.com/JoinTheTeem/">
-        <img id="socialImage" src="./assets/fb.png"></a>
-        <a href="https://www.instagram.com/jointheteem/?hl=en">
-        <img id="socialImage" src="./assets/instagram.png"></a>
-      </div>
-    </div>
-  </div>
 
+        <div id="mainGraphicTitleContainer">
+          <div id="titleContainer">
+            <span class="title_text site_font regular">Get Your</span>
+            <span class="title_text site_font regular wings">Wings</span>
+          </div>
+
+          <div id=lowerTitleContainer>
+            <div class="lower_title">Whether this is your first jump or your five hundreth,
+            <br><span class="bold">Rarefied Air</span> has got you covered.</div>
+          </div>
+        </div>
+
+        <div id="buttonGroupContainer">
+          <div id="buttonGroup">
+            <div class="button_container">
+              <p class="button_group_text site_font">Get started booking your first jump.</p>
+              <img class="skydiver_image" src="./assets/skydiver1.png">
+              <div class="button button_effect" onclick="window.location='../pages/firstjump.html'">
+                <div class="site_font button_font">Get Started</div>
+              </div>
+            </div>
+
+            <div class="button_container">
+              <p class="button_group_text site_font">Ready to go solo?  We can help.</p>
+              <img class="skydiver_image" src="./assets/skydiver2.png">
+              <div class="button button_effect" onclick="window.location='../pages/getcertified.html'">
+                <div class="site_font button_font">Get Certified</div>
+              </div>
+            </div>
+
+            <div class="button_container">
+              <p class="button_group_text site_font">Learn more about skydiving. </p>
+                <img class="skydiver_image" src="./assets/skydiver3.png">
+                <div class="button button_effect">
+                  <div class="site_font button_font">The Manual</div>
+                </div>
+            </div>
+          </div>
+        
+          <div id="dropzoneButton" class="button">
+            <div class="site_font button_font find">Find a Dropzone</div>
+            <img id="dropPin" src="./assets/mapdrop.png">
+          </div>
+        </div> 
+
+        <div id="lowerGraphicContainer">
+          <img src="./assets/lowerGraphic.png" id="lowerGraphic">
+        </div>
+      </div>
+    </div>
+
+   
+
+    <div id="joinContainer">
+      <div id="joinTheTeem">
+        <div id="join">
+          <div  class="site_font diamond_black">&#9670;</div>
+          <div id="joinTitle" class="site_font">Join the TEAM</div> 
+          <div  class="site_font diamond_black">&#9670;</div>
+        </div>
+      </div>
+
+      <div id="joinVideo">
+        <iframe
+          id="video"
+          src="https://player.vimeo.com/video/431287561"
+          width="100%"
+          height="360"
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <div id="footerTop">
+      <img src="./assets/bottom-left.png" class="footerImage">
+      <img src="./assets/bottom-middle.png" class="footerImage">
+      <img src="./assets/bottom-right.png" class="footerImage">
+    </div>
+
+    <div id="footerContainer">
+      <div id="footerLeft" onclick="document.location='index.html'">
+        <div id="footerLogo">
+          <div class="site_font">R</div>
+          <div class="site_font blue">A</div>
+          <img id="footerHelmet" src="./assets/helmet.png">
+        </div>
+      </div>
+
+      <div id="footerRight">
+        <div id="socialLogos">
+          <a href="https://www.facebook.com/JoinTheTeem/">
+          <img id="socialImage" src="./assets/fb.png"></a>
+          <a href="https://www.instagram.com/jointheteem/?hl=en">
+          <img id="socialImage" src="./assets/instagram.png"></a>
+        </div>
+      </div>
+    </div>
   </body>
-  <script src="./JS/index.js">
-</script>
+  
+  <script src="./JS/index.js"></script>
 </html>
