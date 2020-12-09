@@ -62,7 +62,7 @@ body {
 
 #bannerClouds {
   width: 100%;
-  margin-top: 30%;
+  margin-top: 50%;
   background-size: cover;
   overflow: hidden;
   background-position: center;
@@ -84,6 +84,10 @@ body {
 #disciplinesSection {
   display: flex;
   flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  margin-top: -1%;
+  position: relative;
+  width: 100%;
 }
 
 #disciplinesTitle {
@@ -126,13 +130,18 @@ body {
 }
 
 #disciplinesBorder {
-  margin-top: 5%;
-  height: 15%;
+  margin-top: 2%;
+  height: 11vw;
   background-color: black;
-  font-size: 3vw;
   display: flex;
   justify-content: space-around;
-  padding-bottom: 2%;
+}
+
+#disciplinesText {
+  padding-top: 1%;
+  font-size: 4vw;
+  text-align: center;
+  position: relative;
 }
 
 span {
@@ -140,26 +149,11 @@ span {
 }
 
 #infoSection {
-  margin-top: 10%;
   background-color: white;
   width: 100%;
-  height: 800px;
-  margin-left: 5%;
-}
-
-#parachute {
-  float: right;
-  width: 40%;
-  display: flow-root;
-  margin-right: 0;
-}
-#section {
-  margin-top: 50%;
-  margin-left: 5%;
-}
-
-#formHeader {
-  text-align: center;
+  height: 70vw;
+  padding: 5% 2% 5% 5%;
+  font-size: 2vw;
 }
 
 #lowerLogo {
@@ -178,13 +172,13 @@ span {
 /* MOBILE DESIGN */
 
 @media only screen and (max-width: 800px) {
-  #disciplinesBorder {
-    height: 10%;
-  }
+  /* #disciplinesBorder {
+    height: 20%;
+  } */
 }
 
 @media only screen and (max-width: 500px) {
-  #disciplinesBorder {
-    height: 8%;
-  }
+  /* #disciplinesBorder {
+    height: 12%;
+  } */
 }

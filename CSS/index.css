@@ -1,7 +1,8 @@
-body, html {
+body,
+html {
   padding: 0px;
   margin: 0px;
-  background-color: #4282d6 ;
+  background-color: #4282d6;
 }
 
 /* Colors */
@@ -15,7 +16,7 @@ body, html {
 
 .site_font {
   font-family: "Roboto Condensed", sans-serif;
-   margin: 0;
+  margin: 0;
 }
 
 .site_font.bold {
@@ -122,12 +123,12 @@ body, html {
 .skydiving_school {
   margin: 0 1%;
   font-size: 3vw;
-  color: #FFF;
+  color: #fff;
   font-weight: 100;
 }
 
 .diamond_white {
-  color: #FFF;
+  color: #fff;
   font-size: 2vw;
 }
 
@@ -164,6 +165,7 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  margin-top: -1%;
 }
 
 #titleContainer {
@@ -199,7 +201,7 @@ body, html {
 }
 
 #buttonGroup {
-  width: 90%;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -209,6 +211,8 @@ body, html {
 
 .button_container {
   border: 2px solid rgb(194, 185, 185);
+  width: 20%;
+  min-width: 20%;
   display: flex;
   align-content: end;
   justify-content: space-evenly;
@@ -223,6 +227,10 @@ body, html {
   max-height: 90px;
   max-width: 120px;
   padding: 10%;
+}
+
+.adjust {
+  width: 40%;
 }
 
 .button {
@@ -284,7 +292,7 @@ body, html {
 
 #joinContainer {
   width: 100%;
-  background-color: #4282d6;
+  background-color: #4284db;
 }
 
 #joinTheTeem {
@@ -298,7 +306,7 @@ body, html {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center
+  align-items: center;
 }
 
 #joinTitle {
@@ -309,7 +317,6 @@ body, html {
 .diamond_black {
   font-size: 3vw;
 }
-
 
 #joinVideo {
   max-width: 90%;
@@ -332,7 +339,7 @@ body, html {
 
 /* MOBILE DESIGN */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   #bannerTitle {
     font-size: 14vw;
   }
