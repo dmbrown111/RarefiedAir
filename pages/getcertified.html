@@ -4,26 +4,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,300;1,400&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link href="../CSS/getcertified.css" rel="stylesheet" />
     <link href="../CSS/form.css" rel="stylesheet" />
     <link href="../CSS/footer.css" rel="stylesheet" />
     <title>Get Certified</title>
+
   </head>
   <body>
-    <banner id="bannerTitle" class="site_font bold">
+    <div id="bannerTitle" class="site_font bold">
       <div class="banner_title">IT'S TIME FOR<br />THE NEXT LEVEL</div>
       <div id="bannerImageContainer">
         <img src="../assets/getcertified/clouds.png" id="bannerClouds" />
         <img src="../assets/getcertified/skydiver.png" id="bannerSkydiver" />
       </div>
-    </banner>
+    </div>
+
     <div id="disciplinesSection">
       <div id="disciplinesTitle" class="site_font bold">
         Open up a world<br />of possibilities...
       </div>
       <div id="disciplines">
+        <div class="disciplines_pair">
         <div class="disciplines_box">
           <p class="discipline_title site_font bold">Solo</p>
           <img class="diver_image" src="../assets/getcertified/solo.png" />
@@ -32,6 +34,8 @@
           <p class="discipline_title site_font bold">Formation</p>
           <img class="diver_image" src="../assets/getcertified/formation.png" />
         </div>
+      </div>
+      <div class="disciplines_pair">
         <div class="disciplines_box site_font bold">
           <p class="discipline_title">Base<br />Jumping</p>
           <img class="diver_image" src="../assets/getcertified/base.png" />
@@ -41,35 +45,30 @@
           <img class="diver_image" src="../assets/getcertified/wingsuit.png" />
         </div>
       </div>
+      </div>
     </div>
+
     <div id="disciplinesBorder">
-      <p class="site_font bold white">
+      <div id="disciplinesText" class="site_font bold white">
         Skydiving has many disciplines to explore. <br />Checkout
         <span>The Manual</span> to dig in and learn more.
-      </p>
+      </div>
     </div>
+
     <div id="infoSection">
-      <div class="section">
         <h1>Getting Certified:</h1>
-        <p>In order to get a USPA liciense you must:</p>
-        <br />
+        <div>In order to get a USPA liciense you must:</div>
         <div>> Complete a minimum of 25 jumps.</div>
-        <br />
         <div>
           > Complete all requirements laid out by the USPA License Proficiency
           Card.
         </div>
-        <br />
         <div>> Make five skidives with one or more people.</div>
-        <br />
         <div>> Have skydiving license stamped by the USPA.</div>
-        <br />
         <div>> Pass USPA written and oral exams.</div>
-
         <h2>We are here for you.</h2>
         <div>
           Our certified instructors will take you the process step by step
-          <br />
           toward certication from beginning to end in our Student Program.
         </div>
         <div>Full Certification: $2,495.00</div>
@@ -86,20 +85,22 @@
           <span class="site_font bold">Weight:</span> Maximum weight is 225 lbs
         </div>
         <h1>Length of Jump:</h1>
-        <div>
+        <div class="section_pad">
           Most dives last approximately 2 hours, which includes paperwork,
           training, equipment preparation, aircraft ride,<br />
           the jump itself, and removal of equipment. We cannot guarantee flight
           conditions or specify exact times for the <br />day of your jump. Be
           prepared to wait up to 4 hours if needed.
         </div>
-      </div>
     </div>
+ 
     <div id="formSection">
+      <div>
       <h1 id="formHeader">
         Set up an appointment <br />
         with one of our specialists to get started:
       </h1>
+    </div>
       <div id="formContainer">
         <div id="form">
           <div>
@@ -124,9 +125,11 @@
         </div>
       </div>
     </div>
+
     <div id="lowerLogo">
       <img id="uspa" src="../assets/firstjump/uspa.png" />
     </div>
+
     <div id="footerContainer">
       <div id="footerLeft" onclick="document.location='../index.html'">
         <div id="footerLogo">
@@ -135,6 +138,7 @@
           <img id="footerHelmet" src="../assets/helmet.png" />
         </div>
       </div>
+
       <div id="footerRight">
         <div id="socialLogos">
           <a href="https://www.facebook.com/JoinTheTeem/">
