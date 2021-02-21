@@ -41,6 +41,7 @@ body {
   background-color: #4282d6;
   position: relative;
   z-index: 1;
+  margin-bottom: -5%;
 }
 
 .banner_title {
@@ -55,7 +56,7 @@ body {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  background-color: #4282d6;
+  /* background-color: #4282d6; */
 }
 
 #bannerClouds {
@@ -79,10 +80,25 @@ body {
   margin-bottom: 5%;
 }
 
+#loaderContainer {
+  width: 100%;
+}
+
+#loader {
+  width: 10%;
+  align-self: center;
+}
+
+#infoSectionWrap {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 3;
+}
+
 #infoSection {
   margin-top: -2%;
-  background-color: white;
-  width: 100%;
+  background-color: rgb(255, 255, 255);
+  width: 90%;
   height: 800px;
   margin-left: 5%;
   position: relative;
@@ -98,6 +114,11 @@ p {
   width: 40%;
   margin-right: 0;
   margin-right: 3%;
+  max-width: 450px;
+}
+
+#formSection {
+  margin-top: -20%;
 }
 
 #section {
@@ -113,58 +134,9 @@ p {
 }
 
 #uspa {
-  width: 10%;
+  width: 15vw;
+  height: 15vw;
   margin-bottom: 5%;
+  margin-right: 5%;
   min-width: 80px;
 }
-
-/* Footer Section
-
-#footerContainer {
-  width: 100%;
-  background-color: rgb(248, 248, 248);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 6vw;
-}
-#footerLeft {
-  width: 20%;
-  min-width: 20%;
-}
-
-#footerLogo {
-  display: flex;
-  flex-direction: row;
-  cursor: pointer;
-}
-
-#footerhelmet {
-  width: 30%;
-  height: 90%;
-  margin-left: 5%;
-  margin-top: 2%;
-}
-
-#footerRight {
-  width: 100%;
-  margin-left: 20%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-#socialLogos {
-  cursor: pointer;
-  width: 22%;
-}
-
-#socialImage {
-  width: 33%;
-  height: 60%;
-  margin-left: 2%;
-  margin-top: 2%;
-}
-
-.social_color {
-  color: #4282d6;
-} */

@@ -9,30 +9,34 @@
     <link href="../CSS/firstjump.css" rel="stylesheet" />
     <link href="../CSS/footer.css" rel="stylesheet" />
     <link href="../CSS/form.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="../JS/form.js"></script>
+  
     <title>First Jump</title>
   </head>
   <body>
-    <banner id="bannerTitle" class="site_font bold">
+    <div id="bannerTitle" class="site_font bold">
       <div class="banner_title">READY TO EXPERIENCE<br />THE THRILL?</div>
       <div id="bannerImageContainer">
         <img src="../assets/firstjump/bannerClouds.png" id="bannerClouds" />
         <img src="../assets/firstjump/bannerSkydiver.png" id="bannerSkydiver" />
       </div>
-    </banner>
+    </div>
+
+    <div id="infoSectionWrap">
     <div id="infoSection">
       <div class="section">
         <h2>Single Jumper: $225.00</h2>
         <p>
           Tandem Skydive, includes all training, equipment, the jump from
-          14,500' , <br />and an official, signed, Jump Certificate.
+          14,500', and an official, signed, Jump Certificate.
         </p>
         <p class="site_font bold">+ Video/Photo Package: $100.00</p>
         <img id="parachute" src="../assets/firstjump/parachute.png" />
         <h2>Group Jump (5 or more): $225.00 each</h2>
         <p>
           Tandem Skydive, includes all training, equipment, the jump from
-          14,500' , <br />
-          and an official, signed, Jump Certificate.
+          14,500', and an official, signed, Jump Certificate.
         </p>
         <p class="site_font bold">+ Video/Photo Package: $50.00 each</p>
         <div>
@@ -49,40 +53,47 @@
         <h1>Length of Jump:</h1>
         <p>
           Most dives last approximately 2 hours, which includes paperwork,
-          training, equipment preparation, aircraft ride,<br />
-          the jump itself, and removal of equipment. We cannot guarantee flight
-          conditions or specify exact times for the <br />day of your jump. Be
+          training, equipment preparation, aircraft ride, the jump itself, and removal of equipment. We cannot guarantee flight
+          conditions or specify exact times for the day of your jump. Be
           prepared to wait up to 4 hours if needed.
         </p>
       </div>
     </div>
+  </div>
+
     <div id="formSection">
+      <div>
       <h1 id="formHeader">
         Set up an appointment <br />
         with one of our specialists to get started:
       </h1>
+    </div>
       <div id="formContainer">
-        <div id="form">
+        <form id="form">
           <div>
             <label for="name">Name:*</label>
-            <input type="text" id="name" />
+            <input type="text" id="name" name="Name"/>
           </div>
           <div>
             <label for="name">Phone number:</label>
-            <input type="text" id="phoneNumber" />
+            <input type="text" id="phoneNumber" name="Phone_number"/>
           </div>
           <div>
             <label for="name">Email:*</label>
-            <input type="text" id="email" />
+            <input type="text" id="email" name="user_email"/>
           </div>
           <div>
             <label for="name">Additional Info:*</label>
-            <textarea id="additionalInfo" row="5"></textarea>
-          </div>
+            <textarea id="additionalInfo" row="5" name="Additional_Info"></textarea>
+          </div> 
           <div id="submitContainer">
-            <input type="submit" value="Submit" id="submit" />
+            <input type="submit" value="Send" id="submit" OnClientClick="showLoader();"
+            OnClick="submit"/>
+          </div> 
+          <div id="loaderContainer">
+            <img id="loader" style="display:none;" src="../assets/loaderImage.gif"/>
           </div>
-        </div>
+          </form>
       </div>
     </div>
     <div id="lowerLogo">
@@ -96,6 +107,7 @@
           <img id="footerHelmet" src="../assets/helmet.png" />
         </div>
       </div>
+      
       <div id="footerRight">
         <div id="socialLogos">
           <a href="https://www.facebook.com/JoinTheTeem/">
