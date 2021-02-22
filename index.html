@@ -8,7 +8,7 @@
     />
     <link href="./CSS/index.css" rel="stylesheet" />
     <link href="./CSS/footer.css" rel="stylesheet" />
-    <script src="index.js"></script>
+    
     <title>Rarefied Air Skydiving School</title>
   </head>
   <body>
@@ -57,16 +57,16 @@
             <div class="button_container">
               <p class="button_group_text site_font">Get started booking your first jump.</p>
               <img class="skydiver_image" src="./assets/skydiver1.png">
-              <div class="button button_effect" onclick="window.location='../pages/firstjump.html'">
-                <div class="site_font button_font">Get Started</div>
+              <div class="button button_effect">
+                <a class="site_font button_font" href="./pages/firstjump.html">Get Started</a>
               </div>
             </div>
 
             <div class="button_container">
               <p class="button_group_text site_font">Ready to go solo?  We can help.</p>
               <img class="skydiver_image" src="./assets/skydiver2.png">
-              <div class="button button_effect" onclick="window.location='../pages/getcertified.html'">
-                <div class="site_font button_font">Get Certified</div>
+              <div class="button button_effect">
+                <a class="site_font button_font" href="./pages/getcertified.html">Get Certified</a>
               </div>
             </div>
 
@@ -80,7 +80,7 @@
           </div>
         
           <div id="dropzoneButton" class="button">
-            <div class="site_font button_font find" onclick="window.location='../pages/map.html'">Find a Dropzone</div>
+            <div class="site_font button_font find"><a class="find" href="./pages/map.html">Find a Dropzone</a></div>
             <img id="dropPin" src="./assets/mapdrop.png">
           </div>
         </div> 
@@ -122,7 +122,7 @@
     </div>
 
     <div id="footerContainer">
-      <div id="footerLeft" onclick="document.location='index.html'">
+      <div id="footerLeft" href="./index.html">
         <div id="footerLogo">
           <div class="site_font">R</div>
           <div class="site_font blue">A</div>

@@ -59,6 +59,7 @@ html {
   color: rgb(255, 255, 255);
   font-weight: bold;
   font-size: 2vw;
+  text-decoration: none;
 }
 
 .title_text {

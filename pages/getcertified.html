@@ -8,8 +8,6 @@
     <link href="../CSS/getcertified.css" rel="stylesheet" />
     <link href="../CSS/form.css" rel="stylesheet" />
     <link href="../CSS/footer.css" rel="stylesheet" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script src="../JS/form.js"></script>
   
     <title>Get Certified</title>
 
@@ -103,33 +101,34 @@
         with one of our specialists to get started:
       </h1>
     </div>
-      <div id="formContainer">
-        <form id="form">
-          <div>
-            <label for="name">Name:*</label>
-            <input type="text" id="name" name="Name"/>
-          </div>
-          <div>
-            <label for="name">Phone number:</label>
-            <input type="text" id="phoneNumber" name="Phone_number"/>
-          </div>
-          <div>
-            <label for="name">Email:*</label>
-            <input type="text" id="email" name="user_email"/>
-          </div>
-          <div>
-            <label for="name">Additional Info:*</label>
-            <textarea id="additionalInfo" row="5" name="Additional_Info"></textarea>
-          </div> 
-          <div id="submitContainer">
-            <input type="submit" value="Send" id="submit" OnClientClick="showLoader();"
-            OnClick="submit"/>
-          </div> 
-          <div id="loaderContainer">
-            <img id="loader" style="display:none;" src="../assets/loaderImage.gif"/>
-          </div>
-          </form>
-      </div>
+    <div id="formContainer">
+      <form id="form">
+        <div>
+          <label class="required" for="name">Required:*</label>
+          <input type="text" id="name" name="Name" placeholder="First and Last name"/>
+          <span class="help-text"></span>
+        </div>
+        <div>
+          <label for="name"></label>
+          <input type="text" id="phoneNumber" name="Phone_number" placeholder="Phone Number"/>
+        </div> 
+        <div>
+          <label class="required" for="name">Required:*</label>
+          <input type="text" id="email" name="user_email" placeholder="Email"/>
+        </div>
+        <div>
+          <label class="required" for="name">Required:*</label>
+          <textarea id="additionalInfo" row="5" name="Additional_Info" placeholder="Additional Info"></textarea>
+        </div> 
+        <div id="submitContainer">
+          <input type="submit" value="Send" id="submit" OnClientClick="showLoader();"
+          OnClick="submit"/>
+        </div> 
+        <div id="loaderContainer">
+          <img id="loader" style="display:none;" src="../assets/loaderImage.gif"/>
+        </div>
+        </form>
+    </div>
     </div>
 
     <div id="lowerLogo">
@@ -137,13 +136,15 @@
     </div>
 
     <div id="footerContainer">
-      <div id="footerLeft" onclick="document.location='../index.html'">
-        <div id="footerLogo">
-          <p3 class="site_font">R</p3>
-          <div class="site_font blue">A</div>
-          <img id="footerHelmet" src="../assets/helmet.png" />
+      <a style="text-decoration: none; outline: none;" href="../index.html">
+        <div id="footerLeft" href="../index.html">
+          <div id="footerLogo">
+            <p3 class="site_font" style="color:black;">R</p3>
+            <div class="site_font blue">A</div>
+            <img id="footerHelmet" src="../assets/helmet.png" href="../index.html"/>
+          </div>
         </div>
-      </div>
+      </a>
 
       <div id="footerRight">
         <div id="socialLogos">
@@ -157,4 +158,6 @@
       </div>
     </div>
   </body>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="../JS/form.js"></script>
 </html>

@@ -97,8 +97,6 @@ body {
   -ms-box-orient: horizontal;
   display: -moz-flex;
   display: flex;
-  /* flex-direction: column-reverse; */
-  /* flex-wrap: wrap; */
   justify-content: center;
   margin-top: 10%;
   padding-bottom: 5%;
@@ -108,7 +106,6 @@ body {
 .disciplines_pair {
   display: flex;
   flex-direction: row;
-  /* width: 3s0%; */
 }
 
 .discipline_title {

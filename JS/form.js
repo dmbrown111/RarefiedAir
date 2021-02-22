@@ -1,11 +1,10 @@
- type="text/javascript">
- (function() {
+(function() {
     // https://dashboard.emailjs.com/admin/integration
     emailjs.init('user_2K3cXKUH62OWlnkSADuEb');
 })();
  
  
-            {/* // Form Validate */}
+            /* // Form Validate */
       validate = function() {
           
           var name =  document.getElementById('name')
@@ -19,7 +18,7 @@
           } else {
             name.style.borderColor = "none"
           }
-console.log("test email regex", !email_regex.test(email.value))
+          
           if (email.value.trim() == "" || !email_regex.test(email.value)) {
             email.style.borderColor = "red"
             return false
@@ -36,7 +35,7 @@ console.log("test email regex", !email_regex.test(email.value))
 
           return true
       }
-            {/* // Loader */}
+            /* // Loader */
       showLoader = function() {
         document.getElementById("loader").style.display = 'block';
       }
